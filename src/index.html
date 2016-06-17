@@ -19,13 +19,29 @@
 
 <main>
   <div class="main-content">
-    <p class="promo__text">Подпишись на лучшие выступления мировых экспертов
+    <p class="promo__text">Подпишись на лучшие выступления мировых экспертов <br>
       с крупнейшего бизнес форума Европы</p>
     <div class="promo__form">
-      <form action="">
-        <input type="email" placeholder="Введите email">
+
+      <form method="POST"
+            action="https://cp.unisender.com/ru/subscribe?hash=56hhkgdcaq17ibepbdcc3k5t4srxrogecese5jokxcytfqrxzm5sy"
+            name="subscribtion_form">
+        <input type="email" placeholder="Введите email" class="email" name="email" >
+        <input type="submit" value="Подписаться" class="btn-submit">
+        <input type="hidden" name="charset" value="UTF-8">
+        <input type="hidden" name="default_list_id" value="7062298">
+        <input type="hidden" name="overwrite" value="2">
+        <input type="hidden" name="is_v5" value="1">
       </form>
+
+      <p class="promo__text--small">Новое выступление каждую неделю!</p>
     </div>
+    <div class="speaker">
+      <p class="speaker__name">Гай Кавасаки</p>
+      <p class="speaker__text">Предприниматель, венчурный капиталист,
+        основатель концепции евангелизма, экс-евангелист Apple</p>
+    </div>
+    <p class="slogan">“Искусство подрывных инноваций”</p>
   </div>
 
 </main>

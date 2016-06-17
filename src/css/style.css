@@ -42,12 +42,13 @@ html, body{
 
 body {
 	font-family: Sero, Tahoma, sans-serif;
-	font-size: 20px;
+	font-size: 21px;
 	background: url(../img/bg.jpg) no-repeat 50% 60%;
 	background-size: cover;
 	color: #fff;
 	overflow-x: hidden;
 	font-weight: 400;
+	background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li, blockquote, figure {
@@ -55,38 +56,264 @@ h1, h2, h3, h4, h5, h6, p, ul, li, blockquote, figure {
 	margin: 0;
 }
 
-.container {
-	padding: 0 40px;
-}
-
 .header {
 	width: 100%;
 	height: 90px;
 	background-color: rgba(0, 0, 0, 0.7);
-	padding: 20px 0;
+	padding: 10px 0;
+}
+
+.container {
+	text-align: center;
 }
 
 .header__logo {
-	float: left;
+	max-width: 90%;
 }
 
 .header__email {
-	float: right;
-	font-size: 30px;
-	height: 48px;
-	padding-top: 7px;
+	display: block;
 }
 
 .main-content {
 	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
 }
 
-@media (min-width: 992px) {
+.promo__form {
+	margin-bottom: 20px;
+}
+
+.promo__text {
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.email {
+	height: 45px;
+	width: 300px;
+	outline: none;
+	border: 2px solid #bf8b47;
+	border-radius: 7px;
+	line-height: 35px;
+	color: #000000;
+	padding: 0 10px;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.btn-submit {
+	width: 300px;
+	height: 45px;
+	background-color: #bf8b47;
+	line-height: 45px;
+	text-align: center;
+	border: none;
+	outline: none;
+	border-radius: 7px;
+	font-size: 16px;
+}
+
+.promo__text--small {
+	font-size: 12px;
+	padding-top: 10px;
+}
+
+.speaker {
+	margin-bottom: 20px;
+}
+
+.speaker__name {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.speaker__text {
+	font-size: 16px;
+}
+
+.slogan {
+	font-style: italic;
+	color: #a3773d;
+	font-size: 20px;
+}
+
+@media (min-width: 768px) {
+	body {
+		background-position: 30% 60%;
+	}
+
+	.main-content {
+		float: right;
+		width: 70%;
+		padding: 50px 15px;
+	}
+
+	.promo__form {
+		margin-bottom: 50px;
+	}
+
+	.promo__text {
+		font-size: 22px;
+		margin-bottom: 30px;
+	}
+
+	.email {
+		height: 55px;
+		width: 360px;
+		line-height: 55px;
+		padding: 0 15px;
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+
+	.btn-submit {
+		width: 360px;
+		height: 55px;
+		line-height: 55px;
+		font-size: 22px;
+	}
+
+	.promo__text--small {
+		font-size: 16px;
+		padding-top: 20px;
+	}
+
+	.speaker {
+		padding-right: 73px;
+		text-align: right;
+	}
+
+  .speaker__name {
+	  font-size: 28px;
+	  margin-bottom: 15px;
+  }
+
+	.speaker__text {
+		font-size: 18px;
+	}
+
+  .slogan {
+	  font-size: 28px;
+  }
+}
+
+@media (min-width: 1100px) {
+
+	.container {
+		padding: 0 40px;
+		text-align: left;
+	}
+
+	.header {
+		width: 100%;
+		height: 90px;
+		background-color: rgba(0, 0, 0, 0.7);
+		padding: 20px 0;
+	}
+
+	.header__logo {
+		float: left;
+	}
+
+	.header__email {
+		float: right;
+		font-size: 30px;
+		height: 48px;
+		padding-top: 7px;
+	}
+
+	.main-content {
+		float: right;
+		width: 70%;
+		padding-top: 90px;
+		text-align: left;
+	}
+
+	.promo__text {
+		font-size: 32px;
+		line-height: 40px;
+		max-width: 600px;
+		margin-bottom: 30px;
+	}
+
+	.promo__form {
+		max-width: 750px;
+		margin-bottom: 150px;
+	}
+
+	.email {
+		height: 65px;
+		width: 360px;
+		outline: none;
+		border: 2px solid #bf8b47;
+		border-radius: 7px;
+		line-height: 65px;
+		margin-right: 32px;
+		color: #000000;
+		padding: 0 20px;
+		font-size: 28px;
+	}
+
+	.btn-submit {
+		width: 320px;
+		height: 65px;
+		background-color: #bf8b47;
+		line-height: 65px;
+		text-align: center;
+		border: none;
+		outline: none;
+		border-radius: 7px;
+		font-size: 28px;
+		transition: all linear 0.3s;
+	}
+	
+	.btn-submit:hover {
+		background-color: #a3773d;
+	}
+
+	.promo__text--small {
+		text-align: right;
+		padding-top: 15px;
+		font-size: 21px;
+	}
+
+	.speaker {
+		margin-bottom: 35px;
+		max-width: 600px;
+		padding-right: 0;
+		text-align: left;
+	}
+
+	.speaker__name {
+		font-size: 55px;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	.speaker__text {
+		font-size: 21px;
+	}
+
+	.slogan {
+		font-style: italic;
+		color: #a3773d;
+		font-size: 55px;
+	}
+}
+
+@media (min-width: 1550px) {
 	.main-content {
 		float: right;
 		width: 50%;
 	}
 }
+
+
 
 /*@media (min-width: 768px) {
 	.container, .container--small{
