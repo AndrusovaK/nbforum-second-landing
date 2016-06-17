@@ -1,0 +1,18 @@
+{
+  "name": "Travel site",
+  "authors": [
+    "AndrusovaK <andrusova_ksenia@mail.ru>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "magnific-popup": "^1.1.0"
+  }
+}
